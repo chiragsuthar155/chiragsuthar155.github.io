@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#test-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #ffc107;
+  color: white;
+}
+
+.tt-timer {
+  font-size: 5rem;
+}
+
+button {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+@media (min-width: 280px) and (max-width: 308px) {
+  .btn {
+    margin-bottom: 20px;
+    width: 130px;
+  }
+  #button-self {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 280px) {
+  .btn {
+    margin-bottom: 20px;
+    width: 130px;
+  }
+  #button-self {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
