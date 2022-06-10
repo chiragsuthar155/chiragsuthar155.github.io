@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="gameContainer">
+      <div class="grid">
+        <div class="box bt-0 bl-0"><span class="boxText"></span></div>
+        <div class="box bt-0"><span class="boxText"></span></div>
+        <div class="box bt-0 br-0"><span class="boxText"></span></div>
+        <div class="box bl-0"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box br-0"><span class="boxText"></span></div>
+        <div class="box bl-0 bb-0"><span class="boxText"></span></div>
+        <div class="box bb-0"><span class="boxText"></span></div>
+        <div class="box bb-0 br-0"><span class="boxText"></span></div>
+      </div>
+
+      <div class="info">
+        <h1>Tic-Tac-Toe Game</h1>
+        <div>
+          <span>Turn : <span class="player">X</span></span>
+        </div>
+        <div id="result">running</div>
+        <div class="imgBox">
+          <img src="new.gif" alt="win gif" />
+        </div>
+        <button class="btn btn-warning reset">Start Again</button>
+      </div>
+    </div>
+  </body>
+</html>

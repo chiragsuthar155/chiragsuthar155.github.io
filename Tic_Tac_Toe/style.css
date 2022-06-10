@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+:root {
+  --black: black;
+  --hover: #fef9e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mali", cursive;
+}
+
+.info h1 {
+  color: #ffc107;
+  font-family: "Secular One", sans-serif;
+  font-size: 2.5rem;
+}
+
+.gameContainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin: 30px 5px 10px 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+  border: 2px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: var(--hover);
+  cursor: pointer;
+}
+
+.boxText {
+  font-size: 32px;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.info span {
+  font-size: 29px;
+}
+
+.imgBox img {
+  width: 0;
+  transition: width 0.5s ease-in;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#result {
+  font-size: 1.5rem;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+@media (min-width: 300px) and (max-width: 511px) {
+  .gameContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .info h1 {
+    font-size: 2.19rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .gameContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .info h1 {
+    font-size: 1.7rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px);
+  }
+}
