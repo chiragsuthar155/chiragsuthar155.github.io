@@ -31,6 +31,7 @@ var increaseTimer = () => {
 var stopTimer = () => {
   tick.pause();
   clearTimeout(timeout);
+  document.getElementById("timer-start").disabled = false;
 };
 
 var resetTimer = () => {
