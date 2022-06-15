@@ -22,39 +22,49 @@ const clickSound = new Audio("click.mp3");
 const replaySound = new Audio("restart.mp3");
 // Function of Cpu's Move
 const cpuMove = function () {
-  const cpu = document.querySelector(".cpu");
-  const cpuChoice = Math.trunc(Math.random() * 3);
+  let cpu = document.querySelector(".cpu");
+  let cpuChoice = Math.trunc(Math.random() * 3);
   cpu.src = `img-${cpuChoice}.jpg`;
+  if (cpuChoice == 0) {
+    cpu.dataset.selection = rock.dataset.selection;
+  }
+  if (cpuChoice == 1) {
+    cpu.dataset.selection = paper.dataset.selection;
+  }
+  if (cpuChoice == 2) {
+    cpu.dataset.selection = scissor.dataset.selection;
+  }
+
   return cpu;
 };
 
-// Checking winning Condition; // Getting Problem with the logic
+// Checking winning Condition;
 function win(ele1, ele2) {
-  const a = Number(ele1.src[26]);
+  const a = ele1.dataset.selection;
+  const b = ele2.dataset.selection;
 
-  const b = Number(ele2.src[26]);
-
-  if (a === 0 && b === 1) {
+  if (a === "rock" && b === "paper") {
     score[1] += 1;
     cpuScore.textContent = score[1];
-  } else if (a === 1 && b === 2) {
+  } else if (a === "paper" && b === "scissor") {
     score[1] += 1;
     cpuScore.textContent = score[1];
-  } else if (a === 2 && b === 0) {
+  } else if (a === "scissor" && b === "rock") {
     score[1] += 1;
     cpuScore.textContent = score[1];
-  } else if (a === 0 && b === 2) {
+  } else if (a === "rock" && b === "scissor") {
     score[0] += 1;
     myScore.textContent = score[0];
-  } else if (a === 1 && b === 0) {
+  } else if (a === "paper" && b === "rock") {
     score[0] += 1;
     myScore.textContent = score[0];
-  } else if (a === 2 && b === 1) {
+  } else if (a === "scissor" && b === "paper") {
     score[0] += 1;
     myScore.textContent = score[0];
   } else {
     // console.log("Draw");
   }
+
   checkWin();
 }
 
@@ -83,11 +93,10 @@ function scissorFunction() {
 }
 
 rock.addEventListener("click", rockFunction);
-
 paper.addEventListener("click", paperFunction);
-
 scissor.addEventListener("click", scissorFunction);
 
+// Winner Functionality
 const checkWin = function () {
   if (score[0] === 10) {
     leftTemplate.classList.add("winner");
@@ -106,6 +115,7 @@ const checkWin = function () {
   }
 };
 
+// Restart Button Functionality
 restart.addEventListener("click", function () {
   replaySound.play();
   score[0] = 0;
