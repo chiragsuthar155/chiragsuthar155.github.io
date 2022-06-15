@@ -1,6 +1,7 @@
 "use strict";
 
 // Creating Initial Conditions
+
 const score = [0, 0];
 const myScore = document.querySelector(".score-1");
 const cpuScore = document.querySelector(".score-2");
