@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // Creating Initial Conditions
 
@@ -40,6 +40,7 @@ const cpuMove = function () {
 
 // Checking winning Condition;
 function win(ele1, ele2) {
+  // const a = Number(ele1.src[26]);
   const a = ele1.dataset.selection;
   const b = ele2.dataset.selection;
 
@@ -93,10 +94,11 @@ function scissorFunction() {
 }
 
 rock.addEventListener("click", rockFunction);
+
 paper.addEventListener("click", paperFunction);
+
 scissor.addEventListener("click", scissorFunction);
 
-// Winner Functionality
 const checkWin = function () {
   if (score[0] === 10) {
     leftTemplate.classList.add("winner");
@@ -115,7 +117,6 @@ const checkWin = function () {
   }
 };
 
-// Restart Button Functionality
 restart.addEventListener("click", function () {
   replaySound.play();
   score[0] = 0;
