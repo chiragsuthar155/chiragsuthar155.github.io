@@ -30,9 +30,9 @@ const cpuMove = function () {
 
 // Checking winning Condition; // Getting Problem with the logic
 function win(ele1, ele2) {
-  const a = Number(ele1.src[58]);
+  const a = Number(ele1.src[50]);
 
-  const b = Number(ele2.src[58]);
+  const b = Number(ele2.src[50]);
 
   if (a === 0 && b === 1) {
     score[1] += 1;
