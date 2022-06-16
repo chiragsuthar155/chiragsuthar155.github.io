@@ -76,13 +76,10 @@ h1 {
 }
 
 img {
+  height: 70px;
+  width: 70px;
   border-radius: 50px;
   cursor: pointer;
-}
-
-img:hover {
-  border: none;
-  height: 70px;
 }
 
 .rock {
@@ -113,20 +110,11 @@ img:hover {
   font-size: 2rem;
 }
 
-img {
-  height: 70px;
-  width: 70px;
-}
-
 .right img {
   height: 150px;
   width: 150px;
   transform: scaleX(-1);
   border-radius: 90px;
-}
-
-.right img:hover {
-  border: none;
 }
 
 .none {
@@ -165,10 +153,6 @@ img {
   .right img {
     height: 120px;
     width: 120px;
-  }
-
-  img:hover {
-    height: 72px;
   }
 
   h1 {
@@ -212,10 +196,6 @@ img {
   .right img {
     height: 120px;
     width: 120px;
-  }
-
-  img:hover {
-    height: 60px;
   }
 
   h1 {
@@ -274,10 +254,6 @@ img {
   .right img {
     height: 80px;
     width: 80px;
-  }
-
-  img:hover {
-    height: 50px;
   }
 
   h1 {
@@ -343,10 +319,6 @@ img {
   .right img {
     height: 80px;
     width: 80px;
-  }
-
-  img:hover {
-    height: 45px;
   }
 
   h1 {
