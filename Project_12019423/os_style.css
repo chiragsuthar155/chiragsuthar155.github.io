@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "sans-serif";
+}
+
+.container {
+  width: 90%;
+  max-width: 1128px;
+}
+
+.operating_system {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  max-width: 360px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 6;
+  padding: 1.4rem 0rem;
+  transform: translateX(-120%);
+  display: block;
+  background-color: #fff;
+}
+
+.os_item_title {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+.os_title {
+  font-size: 1.4rem;
+  margin: 10px 10px;
+}
+
+.os_section_1 {
+  display: flex;
+  position: relative;
+}
+.os_div {
+  display: flex;
+  flex-direction: row;
+}
+
+.os_div_section {
+  max-width: 500px;
+}
+
+.os_div_section + .os_div_section {
+  margin-left: 30px;
+}
+
+.intro {
+  padding: 0;
+  list-style: none;
+}
+
+.os_link {
+  text-decoration: none;
+  padding: 0.6rem 0rem;
+  margin-left: 10px;
+  display: block;
+}
+
+.os_item a {
+  color: black;
+}
+
+.os_item:hover {
+  background-color: rgb(196, 207, 219);
+}
+
+.os_item:active,
+.os_link:active {
+  background-color: lightgreen;
+  color: white;
+}
+
+.carousel {
+  width: 900px;
+  height: 300px;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.video_fcfs iframe {
+  max-width: 600px;
+  height: 300px;
+  width: 100%;
+}
+
+.body_content_title {
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
+.os_content,
+.body_content,
+.dbms_content,
+.linux_content,
+.os_lab_content {
+  padding: 2rem 1rem;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.os_content_title {
+  margin-bottom: 2.5rem;
+}
+
+.code_content {
+  background-color: #e6e3e3;
+  padding: 1.4rem;
+}
+
+li {
+  list-style: none;
+}

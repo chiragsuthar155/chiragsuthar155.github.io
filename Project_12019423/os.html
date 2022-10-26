@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="os_style.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Operating Systems - Dextutor</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">DexTutor</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link" href="#blogs">Blog</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item dropdown d-flex justify-content-center">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Question Hub
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/os.html">Operating System</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/oslab.html">Operating System Labs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/dbms.html">DBMS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/linux.html">LINUX</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link" href="#videos">Videos</a>
+              </li>
+            </ul>
+            <ul
+              class="d-flex flex-row justify-content-center align-items-start side_navbar"
+            >
+              <li class="d-flex justify-content-center">
+                <button class="btn btn-primary btn-about" type="submit">
+                  About Us
+                </button>
+              </li>
+              <li class="d-flex justify-content-center">
+                <button class="btn btn-success btn-signup" type="submit">
+                  SignUp
+                </button>
+              </li>
+              <li class="d-flex justify-content-center">
+                <button class="btn btn-light btn-login" type="button">
+                  Login
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+    <div class="myModal-2 hidden">
+      <button class="btn--close-modal-2">&times;</button>
+      <h2 class="modal__header">About Us</h2>
+      <p>
+        This website aims at providing information on topics related to Linux,
+        operating systems and database. Our approach is to explain the topic in
+        the most simple manner which can be understood by people of any
+        background. If you have any query regarding Site, Advertisement and any
+        other issue, please feel free to contact at dextutor@gmail.com
+      </p>
+      <div class="about_author">
+        <div>
+          <p>
+            Dr. Baljit Singh Saini is Associate Professor in the School of
+            Computer Science and Engineering, in Lovely Professional University.
+            . Watch Videos here:
+            <a href="https://www.youtube.com/dextutor" target="_blank"
+              >www.youtube.com/c/dextutor</a
+            >
+          </p>
+        </div>
+        <img src="author.png" alt="" />
+      </div>
+    </div>
+
+    <div class="myModal-1 hidden">
+      <button class="btn--close-modal-1">&times;</button>
+      <h2 class="modal__header">Signup</h2>
+      <form class="modal__form">
+        <label>Email Address</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="password" />
+        <label>Confirm Password</label>
+        <input type="password" />
+        <button class="btn_form">Signup</button>
+      </form>
+    </div>
+
+    <div class="myModal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Login</h2>
+      <form class="modal__form">
+        <label>Email Address</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="password" />
+        <button class="btn_form">Login</button>
+      </form>
+    </div>
+
+    <div class="myOverlay hidden"></div>
+
+      <div class="os_section_1">
+        <input class="toggle_checkbox" type="checkbox">
+        <div class="toggle">
+          <span class="top_line common"></span>
+          <span class="mid_line common"></span>
+          <span class="bottom_line common"></span>
+        </div>
+        <main class="operating_system">
+          <h3 class="os_title">Operating System</h3>
+          <ul class="intro">
+            <li class="os_item_title">Introduction</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Introduction to Operating System</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Uniprogramming vs Multiprogramming</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset"
+                >Operating System Services and System Calls</a
+              >
+            </li>
+          </ul>
+
+          <ul class="intro">
+            <li class="os_item_title">Process</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Process and Process States</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Schedulers </a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset ">Operations on Process</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">CPU Scheduling</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">CPU Scheduling Algorithms</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">First Come First Serve (FCFS)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Shortest Job First (Non-Preemptive)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Shortest Job First (Preemptive)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset"
+                >Priority Scheduling (Non-Preemptive)</a
+              >
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Priority Scheduling (Preemptive)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Round Robin (RR)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Priority Scheduling (Preemptive)</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Real Time Scheduling</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Earliest Deadline First Scheduling</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Process vs Thread</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Earliest Deadline First Scheduling</a>
+            </li>
+            <li class="os_item_title">Threads</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Threads in OS</a>
+            </li>
+            <li class="os_item_title">Process Synchronization</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Race Condition</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Critical Section Problem</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Semaphores</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Hardware-Based Solutions</a>
+            </li>
+            <li class="os_item_title">Deadlock</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Deadlock Basics</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Deadlock Prevention</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Deadlock Avoidance</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Resource Allocation Graph</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Banker's Algorithm</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Deadlock Detection and Recovery</a>
+            </li>
+            <li class="os_item_title">Memory Management</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Memory Management Basics</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Contiguous Memory Allocation</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Paging</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Segmentation</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Virtual Memory</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Page Replacement Algorithm</a>
+            </li>
+            <li class="os_item_title">File Management</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">File Management Basics </a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">File Allocation Methods </a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Free Space Management</a>
+            </li>
+            <li class="os_item_title">Secondary Storage Structure</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Device Management</a>
+            </li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Disk Scheduling Algorithm</a>
+            </li>
+            <li class="os_item_title">Inter-Process Communication</li>
+            <li class="os_item">
+              <a href="" class="os_link text-reset">Inter-Process Communication</a>
+            </li>
+            <li class="os_item_title">Security and Protection</li>
+          </ul>
+        </main>
+        <section class="os_content">
+          <h1 class="os_content_title">Introduction to Operating System</h1>
+          <p>We have all heard about operating systems like Windows, Linux, Android, MAC etc. But, the question is What is operating system? What does it do? Why do we need it?
+            “An operating system is an interface between the user and the hardware.“</p>
+            <br>
+          <p>The hardware understands only binary language(0 and 1), so all the instructions must be passed in binary form but a normal user do not know this language. Then how can one interact with the system? Think of it like you know English and you want to interact with a person who knows French. Then, how is this possible? you need a Translator. Thus, OS acts as a translator which converts your commands that it receives via Applications (like MSWord or a web browser etc.) into binary language understood by the hardware and vice-versa.</p>
+        
+          <br>
+          <img src="https://dextutor.com/wp-content/uploads/2020/05/Operating-System-300x239.png" alt="">
+          <br>
+          <br>
+          <h1 class="os_content_title">Need of Operating System</h1>
+          <p>Let's suppose you want to add two numbers: c=a+b;</p>
+          <br>
+          <div class="os_div">
+            <div class="os_div_section">
+              <h3>No OS</h3>
+              If you are working on MC6800 hardware then the instructions will be:
+              LDAA $80 – Loading the number at memory location 80
+              LDAB $81 – Loading the number at memory location 81
+              ADDB – Adding these two numbers
+              STAA $55  – Storing the sum to memory location 55
+              But the moment you hardware changes, for example, say to 8086 or 8088, all the above instructions will change, a problem!
+            </div>
+            <div class="os_div_section">
+              <h3>With OS</h3>
+              Use any High Level Language like C.
+              Write c=a+b;
+              The underlying hardware does not matter because OS takes care of convertion. Infact this is what we always do. Have we ever bothered what hardware are we using. Our focus is just writing the code correctly in C, C++, Python etc.
+            </div>
+          </div>
+
+          <br>
+          <h3>Question?</h3>
+          <br>
+          <p>Can we use the system without installing an Operating System?</p>
+          <br>
+          <h1>Views of Operating System</h1>
+          <br>
+          <p>The use of operating system depends upon who is using it and what is the need in that particular scenario. Hence, there are different views. Broadly you can categorize them into
+            <br>
+            1. User view
+            2. System view
+            <br>
+            From a user's point of view, the operating system should offer ease of use and performance. For example, Windows is very popular because it is very easy to use as it is having a graphical user interface. Similarly, Android became very popular and it became one of the reasons that Nokia's Symbian OS lost its market value.
+            <br>
+            
+            But from the system's point of view, the OS should act as a Resource Manager, which means that the OS should be able to manage all the hardware resources in the system. Hence, all hardware should be used in the most efficient manner and the process should be kept waiting for a minimum amount of time if they require any resource.</p>
+
+            <br>
+
+            <h1>PPT on Introduction to Operating System</h1>
+            <br>
+            <p></p>
+            <br>
+   
+            <iframe class="ppt" src="https://onedrive.live.com/embed?cid=89B3EB154B84559B&resid=89B3EB154B84559B%213373&authkey=AMc3Ym6U_0zvLXo&em=2" width="502" height="427" frameborder="0" scrolling="no"></iframe>
+           
+            <br>
+          
+            <br>
+          <div class="video_fcfs">
+            <h5 class="video_fcfs_title">Video Link</h5>
+            <br>
+            <iframe
+              src="https://www.youtube.com/embed/SyO2mHW3wDY?controls=0&rel=0&disablekb=1&showinfo=0&modestbranding=0&html5=1&iv_load_policy=3&autoplay=0&end=0&loop=0&playsinline=0&start=0&nocookie=false&enablejsapi=1&origin=https%3A%2F%2Fdextutor.com&widgetid=2"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </section> 
+      </div>
+    </div>
+  </body>
+</html>
