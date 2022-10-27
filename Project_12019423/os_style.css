@@ -79,16 +79,6 @@
   color: white;
 }
 
-.carousel {
-  width: 900px;
-  height: 300px;
-}
-
-.carousel-item img {
-  height: 400px;
-  width: 100%;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
