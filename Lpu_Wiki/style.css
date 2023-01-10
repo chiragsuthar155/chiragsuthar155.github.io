@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 22px;
+}
+
+.Navbar {
+  padding-top: 0.3rem;
+}
+
+.Navbar ul img {
+  height: 18px;
+  margin-right: 4px;
+  margin-bottom: 0.3rem;
+}
+
+.Navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0.4rem 1rem;
+  padding-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
+
+.nav-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(191, 191, 254);
+  margin-left: 181px;
+  margin-bottom: 1rem;
+  background: linear-gradient(#ffffff, #f1efef);
+}
+
+.nav-second p {
+  border-left: 1px solid rgb(191, 191, 254);
+  border-right: 1px solid rgb(190, 190, 228);
+  padding: 0.2rem 0.4rem;
+}
+
+.nav-second a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.nav-second p {
+  font-size: 0.8rem;
+}
+
+.no-b {
+  background-color: white;
+}
+.yes-b {
+  background-color: rgb(236, 246, 255);
+}
+
+.left-nav-items {
+  display: flex;
+  align-items: flex-end;
+}
+
+small {
+  font-size: 1rem;
+  color: blue;
+  margin-left: 10px;
+}
+
+.right-nav-items {
+  align-items: flex-end;
+  display: flex;
+}
+
+.search-box {
+  border: 1px solid rgb(116, 116, 116);
+  margin-left: 0.6rem;
+  padding: 0.2rem 0rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+
+.search-box img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-box input {
+  border: none;
+  padding: 0.2rem 0rem;
+  padding-right: 8rem;
+  outline: none;
+  padding-left: 0.3rem;
+}
+
+.side-bar img {
+  height: 130px;
+  margin: 1rem 2rem;
+}
+
+.parent {
+  display: flex;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+.side-bar {
+  width: 12%;
+  border-right: 1px solid rgb(174, 174, 255);
+
+  height: 120vh;
+  background: linear-gradient(#ffffff, #f1efef);
+  font-size: 0.77rem;
+  position: absolute;
+  top: 0;
+}
+
+.side-bar h3 {
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.side-bar a {
+  display: block;
+  padding: 0.16rem 2rem;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-box {
+  width: 80%;
+  margin-left: 12.8rem;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19%;
+  position: absolute;
+  right: 10px;
+  top: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: blue;
+}
+
+.content-box h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 200;
+}
+
+.content-box h2 {
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.first-para {
+  color: rgb(60, 59, 59);
+}
+
+.first-para,
+.second-para {
+  margin-bottom: 1rem;
+}
+
+.content-box p {
+  padding-right: 250px;
+  padding-top: 0.3rem;
+}
+
+.pro {
+  margin-bottom: 2rem;
+}
+
+.content-box aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid black;
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.content-box aside h3 {
+  margin: 0.2rem 0rem;
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
+}
+.content-box aside a {
+  margin: 0.3rem 0rem;
+  text-decoration: none;
+  margin-left: 0.4rem;
+}
+
+.right-content {
+  padding-top: 1rem;
+}
+
+.right-content img {
+  height: 120px;
+  max-width: 200px;
+  margin-top: 0.4rem;
+}
+
+.right-content-shade {
+  background-color: rgb(247, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.right-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headings {
+  margin-left: 0.1rem;
+}
+
+.results {
+  margin-left: 1rem;
+}
+
+.headings ul,
+.results ul {
+  list-style: none;
+}
+
+.headings {
+  width: 50%;
+}
+
+.headings li {
+  padding-top: 0.4rem;
+  margin-left: 0.2rem;
+}
+
+.results li {
+  padding-top: 0.4rem;
+}
+
+.content {
+  display: flex;
+  align-content: center;
+  font-size: 0.77rem;
+}
+
+.content ul li {
+  height: 37px;
+}
+
+.blue {
+  color: blue;
+}
