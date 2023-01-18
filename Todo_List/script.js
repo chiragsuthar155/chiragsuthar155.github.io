@@ -4,6 +4,10 @@ const results = document.querySelector(".results");
 
 btn.addEventListener("click", function () {
   let value = inputField.value;
+  if (value === "") {
+    alert("Please, Add a Todo");
+    return;
+  }
   results.insertAdjacentHTML(
     "afterbegin",
     `
