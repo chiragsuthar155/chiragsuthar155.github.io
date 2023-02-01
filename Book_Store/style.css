@@ -256,6 +256,11 @@
   padding: 60px 20px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .info__card:hover {
@@ -328,12 +333,11 @@
 .slide {
   border-radius: 12px;
   transition: transform 1s;
-}
-
-.slide img {
-  border-radius: 22px;
-  width: 100%;
-  max-width: 30rem;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .book_1 {
@@ -482,7 +486,11 @@
   margin: 0px 10px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   color: rgba(69, 35, 114, 255);
 }
 .testimon_card:hover {
